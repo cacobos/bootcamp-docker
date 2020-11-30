@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: bill
+spring.cloud.config.server.git.uri: https://github.com/cacobos/bootcamp

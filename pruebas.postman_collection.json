@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "794ed43f-de3e-4276-8a4c-e9f09ec0fc31",
+		"name": "pruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/CUSTOMER/customers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"name\":\"Pedro Rodríguez\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/CUSTOMER/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CUSTOMER",
+						"customers"
+					]
+				},
+				"description": "Obtenemos una lista de clientes"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/CUSTOMER/customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"name\":\"Pedro Rodríguez\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/CUSTOMER/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CUSTOMER",
+						"customers"
+					]
+				},
+				"description": "Insertamos un nuevo cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/VISIT/visits",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"idCustomer\":\"1\",\r\n        \"date\":\"2018-04-23T18:25:43.511\",\r\n        \"remark\":\"Visita1\",\r\n        \"idBill\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/VISIT/visits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"VISIT",
+						"visits"
+					]
+				},
+				"description": "Insertar una visita"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/CUSTOMER/customers/name/Antonio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"idCustomer\":\"1\",\r\n        \"date\":\"2018-04-23T18:25:43.511\",\r\n        \"remark\":\"Visita1\",\r\n        \"idBill\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/CUSTOMER/customers/name/Antonio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CUSTOMER",
+						"customers",
+						"name",
+						"Antonio"
+					]
+				},
+				"description": "Buscarmos un cliente por el nombre"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/BILL/bills",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"name\":\"Pedro Rodríguez\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/BILL/bills",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"BILL",
+						"bills"
+					]
+				},
+				"description": "Buscamos todas las facturas"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

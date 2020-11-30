@@ -1,0 +1,7 @@
+model\JsonUtility.class
+model\BillLine.class
+model\Visit.class
+model\Payment.class
+model\Customer.class
+model\Bill.class
+model\Address.class

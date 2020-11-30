@@ -1,0 +1,1 @@
+Es necesario tener una base de datos creada en MySQL con el nombre "bootcamp" y MongoDB activo
